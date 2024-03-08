@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #efc3ca;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+header .navegation  li{
+    list-style: none;
+}
+header .navegation li a{
+    display: inline-block;
+    color: #ff8dc4;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .text h2{
+    color: #ff8dc4;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+.content .text h2 span{
+    font-size: 3.5em;
+    color: #ff8dc4;
+}
+.content .text p{
+    color: #ff8dc4;
+}
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #ff8dc4;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+.content .text a:hover{
+    transform: translateY(-10px);
+}
+.icons{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons li{
+    list-style: none;
+}
+.icons li a{
+    display: inline-block;
+    margin-left: 45px;
+    background: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;
+}
+.icons li a:hover{
+    background: black;
+    transform: translateY(-10px);
+}
+.icons li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+.boxImg{
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+}
+.boxImg img{
+    width: 200px;
+}
+.boxImg .img1{
+    transform: rotate(-15deg)
+}
+.boxImg .img2{
+    transform: rotate(5deg)
+}
+.boxImg .img3{
+    transform: rotate(15deg)
+}
+.boxImg .img4{
+    transform: rotate(0 deg);
+    position: absolute;
+    right: 10px;
+    bottom: 1px;
+    width: 500px;
+    height: 600px;
+    right: 100px; 
+}
+
+@media (max-width: 600px) {
+    .texto-bloco {
+      font-size: 14px;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card {
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    margin-top: 5px;
+  }
+  
+  .card p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .btn-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+  }
+  .btn-whatsapp img {
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
+  .btn-whatsapp img:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #232224;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Estilos padrão para dispositivos maiores */
+body {
+    font-size: 16px;
+}
+
+/* Estilos para dispositivos pequenos (como smartphones) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+  
